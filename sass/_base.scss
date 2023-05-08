@@ -7,6 +7,10 @@
     list-style-type: none;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 .img-basic {
     max-width: 100%;
     object-fit: cover;
@@ -73,6 +77,7 @@
                 display: flex;
                 gap: 5px;
                 align-items: center;
+                font-size: 12px;
             }
         }
     }
@@ -84,6 +89,7 @@
         flex-direction: $fdir;
         gap: 10px;
         justify-content: space-between;
+        align-items: center;
 
         .bottom-content__img-container {
             width: $imgContainerWidth;
@@ -132,12 +138,20 @@
                     display: flex;
                     gap: 5px;
                     align-items: center;
-                    font-size: 12px;
+                    font-size: 11px;
                 }
             }
         }
 }
 
+@mixin bottonContentHeader {
+    background: $primary-bg;
+    color: white;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
 
 $outer-margin: 0 10%;
 $primary-bg: #04091e;

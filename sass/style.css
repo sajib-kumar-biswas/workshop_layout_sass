@@ -7,6 +7,10 @@
   list-style-type: none;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 .img-basic, .main-container .main .content .bottom-content .bottom-content-right .bottom-content__item .bottom-content__img-container .bottom-content__img, .main-container .main .content .bottom-content .bottom-content-left .bottom-content__item .bottom-content__img-container .bottom-content__img, .contentItem .content__img, .main-container .main .content .top-content .top-content-right .content__item .content__img, .main-container .main .content .top-content .top-content-left .content__item .content__img {
   max-width: 100%;
   -o-object-fit: cover;
@@ -66,6 +70,7 @@
   display: flex;
   gap: 5px;
   align-items: center;
+  font-size: 12px;
 }
 
 .header {
@@ -215,12 +220,21 @@
   flex-direction: column;
   gap: 20px;
 }
+.main-container .main .content .bottom-content .bottom-content-left .bottom-content__header {
+  background: #04091e;
+  color: white;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
 .main-container .main .content .bottom-content .bottom-content-left .bottom-content__item {
   width: 100%;
   display: flex;
   flex-direction: row;
   gap: 10px;
   justify-content: space-between;
+  align-items: center;
 }
 .main-container .main .content .bottom-content .bottom-content-left .bottom-content__item .bottom-content__img-container {
   width: 40%;
@@ -260,7 +274,7 @@
   display: flex;
   gap: 5px;
   align-items: center;
-  font-size: 12px;
+  font-size: 11px;
 }
 .main-container .main .content .bottom-content .bottom-content-right {
   width: 40%;
@@ -271,12 +285,21 @@
   flex-direction: column;
   gap: 20px;
 }
+.main-container .main .content .bottom-content .bottom-content-right .bottom-content__header {
+  background: #04091e;
+  color: white;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+}
 .main-container .main .content .bottom-content .bottom-content-right .bottom-content__item {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 10px;
   justify-content: space-between;
+  align-items: center;
 }
 .main-container .main .content .bottom-content .bottom-content-right .bottom-content__item .bottom-content__img-container {
   width: 100%;
@@ -316,7 +339,7 @@
   display: flex;
   gap: 5px;
   align-items: center;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .footer {

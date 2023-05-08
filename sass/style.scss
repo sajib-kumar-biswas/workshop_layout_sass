@@ -183,6 +183,10 @@
                     flex-direction: column;
                     gap: 20px;
 
+                    .bottom-content__header {
+                        @include bottonContentHeader;
+                    }
+
                     .bottom-content__item {
                         @include bottomContent(row,40%,60%);
                     }
@@ -196,6 +200,10 @@
                     display: flex;
                     flex-direction: column;
                     gap: 20px;
+
+                    .bottom-content__header {
+                        @include bottonContentHeader;
+                    }
 
                     .bottom-content__item {
                         @include bottomContent(column);
