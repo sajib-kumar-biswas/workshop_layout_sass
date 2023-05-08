@@ -2,7 +2,7 @@
 
 .header{
     // margin: $outer-margin;
-    background: #dfe3f4;
+    background: $header-bg;
 
     .header__content {
 
@@ -172,14 +172,34 @@
             .bottom-content {
                 display: flex;
                 justify-content: space-between;
+                width: 100%;
 
                 .bottom-content-left {
                     width: 58%;
-                    
+                    box-sizing: border-box;
+                    padding: 15px;
+                    background: $header-bg;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    .bottom-content__item {
+                        @include bottomContent(row,40%,60%);
+                    }
                 }
 
                 .bottom-content-right {
                     width: 40%;
+                    box-sizing: border-box;
+                    padding: 15px;
+                    background: $header-bg;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    .bottom-content__item {
+                        @include bottomContent(column);
+                    }
                 }
             }
         }
